@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Черновик цели на четыре недели — рабочий лист</title>
+<meta name="description" content="Самостоятельная практика без регистрации: выбрать одну цель и проверить, что реально сделать за четыре недели.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="top"><div class="top-inner"><span class="brand">Инна Романовская · «Ритм Результата»</span><a class="nav-link" href="#feedback">Написать Инне</a></div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <span class="eyebrow">Практика без регистрации · 2–4 минуты</span>
+  <h1>Если за ближайшие четыре недели сдвинуть одну важную вещь в своём деле — что это могло бы быть?</h1>
+  <p class="lead">Не нужно сразу знать точную цель или составлять идеальный план. Ответьте на три коротких вопроса и получите первый черновик.</p>
+  <p class="fine-note">Ответы остаются только на вашем устройстве.</p>
+  <div class="cta-row"><a href="#q1" class="btn btn-primary">Подумать над своей целью</a></div>
+</div></section>
+
+<section class="questions-intro" id="q1"><div class="wrap">
+  <span class="eyebrow">Основная практика</span><h2>Три вопроса для черновика цели</h2>
+  <div class="q-card reveal"><span class="q-num">Вопрос 1</span><h3>Что вам особенно важно сдвинуть в своём деле?</h3><p class="muted">Например: запустить продукт, проверить гипотезу или завершить отложенный проект.</p><label class="visually-hidden" for="goal-focus">Что именно я хочу сдвинуть?</label><textarea class="answer" id="goal-focus" name="goal-focus" data-field="goal-focus" placeholder="Что именно я хочу сдвинуть?" required></textarea></div>
+  <div class="q-card reveal"><span class="q-num">Вопрос 2</span><h3>Что должно появиться или измениться к 14 августа?</h3><p class="muted">Например: подготовить и опубликовать 12 материалов.</p><label class="visually-hidden" for="goal-result">Что будет сделано, создано, проверено или завершено?</label><textarea class="answer" id="goal-result" name="goal-result" data-field="goal-result" placeholder="Что будет сделано, создано, проверено или завершено?" required></textarea></div>
+  <div class="q-card reveal"><span class="q-num">Вопрос 3</span><h3>Что сейчас больше всего мешает двигаться?</h3>
+    <fieldset class="checkbox-group"><legend class="muted">Отметьте то, что вам знакомо:</legend><div class="checkbox-options">
+      <div class="checkbox-option"><input type="radio" id="obstacle-unclear-start" name="primary-obstacle" value="unclear-start"><label for="obstacle-unclear-start">неясно, с чего начать</label></div>
+      <div class="checkbox-option"><input type="radio" id="obstacle-too-large" name="primary-obstacle" value="too-large"><label for="obstacle-too-large">задача кажется слишком большой</label></div>
+      <div class="checkbox-option"><input type="radio" id="obstacle-no-time" name="primary-obstacle" value="no-time"><label for="obstacle-no-time">не хватает времени</label></div>
+      <div class="checkbox-option"><input type="radio" id="obstacle-other-priorities" name="primary-obstacle" value="other-priorities"><label for="obstacle-other-priorities">другие дела постоянно оказываются важнее</label></div>
+      <div class="checkbox-option"><input type="radio" id="obstacle-procrastination" name="primary-obstacle" value="procrastination"><label for="obstacle-procrastination">понимаю, что нужно делать, но откладываю</label></div>
+      <div class="checkbox-option"><input type="radio" id="obstacle-other" name="primary-obstacle" value="obstacle-other"><label for="obstacle-other">другое</label></div>
+    </div></fieldset>
+    <div id="goal-obstacles-other"><label for="goal-obstacles">Опишите другое препятствие</label><textarea class="answer" id="goal-obstacles" name="goal-obstacles" data-field="goal-obstacles" placeholder="Где именно я обычно останавливаюсь?"></textarea></div>
+  </div>
+</div></section>
+
+<section class="alt reveal" aria-labelledby="draft-title"><div class="wrap">
+  <span class="eyebrow">Ваш результат</span><h2 id="draft-title">Ваш первый черновик</h2>
+  <div class="q-card"><p id="goal-draft" role="status" aria-live="polite" aria-atomic="true">Черновик появится здесь после заполнения трёх вопросов.</p></div>
+  <p id="goal-draft-note" class="muted" hidden><span aria-hidden="true">ⓘ</span> Это пока не окончательная цель.<br>Это точка, с которой уже можно начинать размышление.</p>
+  <div class="storage-controls"><p id="storage-status" class="storage-status" role="status" aria-live="polite">Ответы сохранены только на этом устройстве</p><div class="answer-actions"><button type="button" class="btn btn-primary btn-small" id="copy-answers">Скопировать черновик</button><button type="button" class="btn btn-ghost btn-small" id="download-answers">Скачать мои ответы</button><button type="button" class="btn btn-ghost btn-small" id="clear-answers">Удалить мои ответы</button></div></div>
+</div></section>
+
+<section id="feedback" class="alt"><div class="wrap"><div class="feedback-card reveal">
+  <span class="eyebrow">Добровольно</span><h2>Хотите проверить, можно ли превратить этот черновик в выполнимую цель?</h2>
+  <p>Вы можете сохранить его только для себя. Или прислать Инне — она коротко напишет, что уже достаточно ясно, что стоит уточнить или сузить и какой объём может быть реалистичным за четыре недели.</p>
+  <p class="fine-note">Бесплатно и без обязательств.</p>
+  <div class="feedback-actions"><button type="button" id="copy-feedback-answers" class="btn btn-primary">1. Скопировать черновик для Инны</button><a href="https://wa.me/77770278497" id="feedback-cta" class="btn btn-ghost" target="_blank" rel="noopener">2. Открыть WhatsApp</a></div>
+  <p id="feedback-status" class="feedback-status" role="status" aria-live="polite"></p>
+</div></div></section>
+
+<section class="author-section reveal" aria-labelledby="about-title"><div class="wrap">
+  <div class="author-card">
+    <img id="author-photo" class="author-photo" src="assets/img/inessa.jpg" width="112" height="126" alt="Инна Романовская" hidden>
+    <div>
+      <span class="eyebrow">Кто даст обратную связь</span>
+      <h2 id="about-title">Инна Романовская</h2>
+      <p>Мастер-коуч и тренер коучинга ICU.<br>Более 13 лет помогает предпринимателям и специалистам прояснять цели, видеть причины остановки и переводить сложные задачи в управляемое движение.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt" aria-labelledby="additional-title"><div class="wrap">
+  <span class="eyebrow">Уровень 2</span><h2 id="additional-title">Хотите уточнить цель глубже?</h2><p class="muted">Откройте только тот вопрос, который сейчас может быть полезен.</p>
+  <details><summary>Проверить, выполнима ли цель за четыре недели</summary><div class="q-card"><ul class="check-list" id="checklist"><li>результат преимущественно зависит от моих действий<div class="tri" data-group="c1"></div></li><li>я смогу заметить, что он появился<div class="tri" data-group="c2"></div></li><li>он помещается в доступное мне время<div class="tri" data-group="c5"></div></li></ul></div></details>
+  <details><summary>Почему эта задача важна именно сейчас?</summary><div class="q-card"><p class="muted">Что изменится, если вы получите результат? Что произойдёт, если ещё на месяц оставить задачу без внимания?</p><label for="goal-importance">Почему эта задача важна именно сейчас?</label><textarea class="answer" id="goal-importance" name="goal-importance" data-field="goal-importance" placeholder="Почему я выбираю эту задачу сейчас?"></textarea></div></details>
+  <details><summary>Сколько времени я действительно могу выделить?</summary><div class="q-card"><fieldset class="checkbox-group"><legend class="muted">Выберите наиболее реалистичный вариант:</legend><div class="checkbox-options"><div class="checkbox-option"><input type="radio" id="time-weekdays" name="available-time-mode" value="weekdays"><label for="time-weekdays">15–30 минут в будний день</label></div><div class="checkbox-option"><input type="radio" id="time-hour" name="available-time-mode" value="hour"><label for="time-hour">около часа</label></div><div class="checkbox-option"><input type="radio" id="time-blocks" name="available-time-mode" value="blocks"><label for="time-blocks">несколько отдельных рабочих блоков в неделю</label></div><div class="checkbox-option"><input type="radio" id="time-other" name="available-time-mode" value="other"><label for="time-other">другой режим</label></div></div></fieldset><label for="goal-time">Свой вариант или уточнение</label><textarea class="answer" id="goal-time" name="goal-time" data-field="goal-time" placeholder="Сколько времени у меня действительно есть?"></textarea></div></details>
+  <details><summary>Какой первый шаг можно сделать?</summary><div class="step-card"><p class="muted">Например: собрать данные; написать одно сообщение; подготовить черновик; назначить время в календаре.</p><label for="first-step">Что я сделаю и когда?</label><textarea class="answer" id="first-step" name="first-step" data-field="first-step" placeholder="Что я сделаю и когда?"></textarea></div></details>
+  <details><summary>Если цель пока не складывается</summary><div class="q-card"><label for="attention-area">Какую часть своего дела я больше не хочу оставлять без внимания?</label><textarea class="answer" id="attention-area" name="attention-area" data-field="attention-area" placeholder="Какую часть своего дела я больше не хочу оставлять без внимания?"></textarea></div></details>
+  <details id="pdf"><summary>Скачать памятку в PDF</summary><div class="q-card"><p>Двухстраничная версия практики, которую можно сохранить на устройстве или распечатать.</p><a href="assets/pdf/chernovik-celi-na-4-nedeli-pamyatka.pdf" class="btn btn-primary" id="pdf-download">Скачать памятку в PDF</a></div></details>
+  <details><summary>Что такое «Ритм Результата»?</summary><div class="program"><p>«Ритм Результата» — четыре недели работы над одной важной задачей: от выбора выполнимой цели до регулярных действий и конкретного результата.</p><div class="meta"><span class="meta-pill">20 июля — 14 августа</span><span class="meta-pill">Telegram + четыре онлайн-встречи</span></div><p class="price">15 000 тенге</p><a href="https://wa.me/77770278497?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%98%D0%BD%D0%BD%D0%B0.%0A%D0%AF%20%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%BC%D0%B8%D0%BB%D0%B0%D1%81%D1%8C%20%D1%81%20%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%BE%D0%B9%20%E2%80%9E%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B2%D0%B8%D0%BA%20%D1%86%D0%B5%D0%BB%D0%B8%20%D0%BD%D0%B0%20%D1%87%D0%B5%D1%82%D1%8B%D1%80%D0%B5%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%E2%80%9C%20%D0%B8%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%BE%D0%B1%20%D1%83%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%B8%20%D0%B2%20%E2%80%9E%D0%A0%D0%B8%D1%82%D0%BC%D0%B5%20%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B0%E2%80%9C." id="program-cta" class="btn btn-primary btn-small" target="_blank" rel="noopener">Обсудить участие</a></div></details>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="privacy-note"><h3 style="margin-top:0;">Важно</h3><p style="margin-bottom:8px;">Рабочий лист предназначен для самостоятельного размышления и не заменяет индивидуальную консультацию.</p><p style="margin-bottom:8px;">Не отправляйте через переписку: документы, ИИН, адрес, банковские сведения, медицинскую информацию, конфиденциальные данные других людей. Для обратной связи достаточно краткого описания рабочей задачи.</p><p style="margin-bottom:0;" class="legal">Присланные ответы используются для ответа в текущем диалоге и не публикуются без отдельного согласия.</p></div><p class="legal">© Инна Романовская · «Ритм Результата»</p></div></footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

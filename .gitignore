@@ -1,0 +1,7 @@
+.DS_Store
+.vscode/
+*.log
+*-backup*
+legacy-content.html
+AUDIT-*.md
+node_modules/
