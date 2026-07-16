@@ -478,11 +478,14 @@
     gap:22px;
     align-items:center;
   }
+  .author-card > div{ min-width:0; }
   .author-card h2{
     margin-bottom:10px;
   }
   .author-card p{
     margin-bottom:0;
+    overflow-wrap:break-word;
+    hyphens:auto;
   }
   .author-photo{
     width:136px;
