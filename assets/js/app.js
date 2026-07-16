@@ -295,7 +295,7 @@
     const missing = [];
 
     if (!state.focus) missing.push('что вы хотите сдвинуть');
-    if (!state.result) missing.push('какой результат покажет продвижение');
+    if (!state.result) missing.push('какого результата вы хотите достичь');
     if (!state.obstacle) missing.push('что сейчас больше всего мешает');
 
     if (missing.length) return { text:'', missing };
